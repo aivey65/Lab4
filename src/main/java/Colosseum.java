@@ -93,7 +93,7 @@ public class Colosseum {
             System.out.println("Sorry. Attack level must be between 1 and 49: ");
             attLevel = myScan.nextInt();
         }
-        System.out.print("Enter defense level" + (MAX_A_D_POINTS - attLevel) + ": ");
+        System.out.print("Enter defense level between 1 and " + (MAX_A_D_POINTS - attLevel) + ": ");
         int defLevel = myScan.nextInt();
         while (defLevel > (MAX_A_D_POINTS - attLevel) || defLevel < 1) {
             System.out.println("Sorry. Defense level must be between 1 and " + (MAX_A_D_POINTS - attLevel) + ": ");
@@ -139,7 +139,7 @@ public class Colosseum {
         if (firstPokemon.hitPoints == 0) {
             System.out.print(secondPokemon + " is the winner!");
         } else {
-            System.out.print(firstPokemon.name + "is the winner!");
+            System.out.print(firstPokemon.name + " is the winner!");
         }
     }
 
